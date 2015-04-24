@@ -1,0 +1,112 @@
+html * {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  margin:2px;
+}
+.card {
+  border:10px solid black;
+  border-radius:20px;
+  width:2.5in;
+  height:3.5in;
+  float:left;
+  margin:0px 2px 2px 0px;
+  display: flex;
+  flex-flow: column;
+}
+
+/* FLAVOR TEXT */
+.flavor-text {
+  flex: 0 1 auto;
+  display: block;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.6em;
+  width: 2.4in;
+  margin: 0.05in;
+}
+
+/* CARD TEXT */
+.text {
+  flex: 1 1 auto;
+  /* display: block; */
+  /* position: absolute; */
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0.05in 0.05in;
+  width: 2.4in;
+  vertical-align: middle;
+  box-shadow: 0px 0px 5px;
+  /* padding: 3em 0; */
+  /* align-self: auto; */
+}
+.text:after {
+  content: attr(data-text);
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 2.4in;
+  white-space:pre;
+}
+/*.student  > .text {
+  height: 0.97in;
+}
+.action > .text {
+  height: 1.22in;
+}
+.project > .text {
+  height: 0.72in;
+}*/
+.card.student {
+  border-color: rgba(112, 128, 144, 1);
+  background: linear-gradient(rgb(48, 48, 111),rgb(105, 105, 212));
+}
+.card.action {
+  border-color: rgba(144, 112, 128, 1);
+  background: linear-gradient(rgb(111, 48, 48),rgb(212, 105, 105));
+}
+.card.project {
+  border-color: rgba(112, 144, 128, 1);
+  background: linear-gradient(rgb(48, 111, 48),rgb(105, 212, 105));
+}
+/*.student > .name {
+  background: rgba(105, 212, 105, 1);
+}
+.action > .name {
+  background: rgba(212, 105, 105, 1);
+}
+.project > .name {
+  background: rgba(144, 144, 238, 1);
+}*/
+span.name {
+  display: block;
+  text-align: center;
+  padding: 0.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 6px 6px 0px 0px;
+  color:rgb(232, 232, 232);
+  flex: 0 1 auto;
+}
+img {
+  display: block;
+  margin: 5px auto;
+}
+.image-border {
+  border: 3px inset lightgray;
+  margin: 5px;
+  margin-top: 0px;
+  background: white;
+  flex: 0 1 auto;
+}
+.student * > img {
+  max-height: 1.75in;
+}
+.action * > img {
+  max-height: 1.5in;
+}
+.project * > img {
+  max-height: 2in;
+}
