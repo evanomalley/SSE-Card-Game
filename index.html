@@ -39,7 +39,7 @@
 
   <div ng-repeat="card in cards">
     <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
-      <span class="name">{{card.name}}</span>
+      <span class="name">{{card.name}} : {{card.subtype}}</span>
       <div class='image-border'><img ng-src="{{card.img}}"></div>
       <div class="flavor-text">{{card.flavorText}}</div>
       <div class="Aligner">
