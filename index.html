@@ -1,22 +1,118 @@
 <html>
 <head>
+
+<script src="http://underscorejs.org/underscore-min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+<script>
+  
+  var app = angular.module("APP", []);
+
+  app.controller("cardctrl", ["$scope",function($scope){
+    $scope.cards = [
+      {
+        copies: _.range(0, 1),
+        type:"student",
+        name:"Evan O'Malley",
+        img:"pictures/Student-EvanO.png",
+        flavorText:"Make a card game?  I could probably do that",
+        stats: [
+          "Base Commit + 1",
+          "Desktop Commit + 2"
+        ]
+      },
+      {
+        copies: _.range(0, 1),
+
+        type:"student",
+        name:"Brian To",
+        img:"Students/Brian.jpg",
+        flavorText:"Saulent of SWAG!! SOS!!!",
+        stats: [
+          "Base Commit + 1",
+          "Desktop Commit + 2"
+        ]
+      },
+      {
+                copies: _.range(0, 4),
+
+        type:"action",
+        name:"Research",
+        img:"pictures/A13_Research.png",
+        flavorText:"Make a card game?  I could probably do that",
+        stats: [
+          "Base Commit + 1",
+          "Desktop Commit + 2"
+        ]
+      },
+      {
+                copies: _.range(0, 4),
+
+        type: "action",
+        name:"All Nighter",
+        img:"pictures/a2_AllNighter.png",
+        flavorText:"More hours means more productivity, right?  I can see aliens now!",
+        stats: [ 
+        "Target student commits double towards a project. Gains Burnout (cannot commit during the next turn)."
+        ]
+      },
+      {
+                copies: _.range(0, 4),
+
+        type:"project",
+        name:"Evan O'Malley",
+        img:"pictures/Student-EvanO.png",
+        flavorText:"Make a card game?  I could probably do that",
+        stats: [ "One line only", "lol jk" ]
+      }
+    ];
+  }]);
+
+</script>
+
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type="text/css" href="theme.css">
 </head>
-<body>
+<body ng-app="APP" ng-controller="cardctrl">
+
+  <div ng-repeat="card in cards">
+    <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
+      <span class="name">{{card.name}}</span>
+      <div class='image-border'><img ng-src="{{card.img}}"></div>
+      <div class="flavor-text">{{card.flavorText}}</div>
+      <div class="Aligner">
+        <div class="Aligner-item Aligner-item--fixed">
+          <p ng-repeat="stat in card.stats">{{stat}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="card student">
     <span class="name">Evan O'Malley</span>
     <div class='image-border'><img src="pictures/Student-EvanO.png"></div>
     <div class="flavor-text">Make a card Game? I could probably do that.</div>
-    <div class="text" data-text="Base Commit + 1
+    <!-- <div class="text" data-text="Base Commit + 1
 
-Desktop Commit + 1"></div>
+Desktop Commit + 2"></div> -->
+        <div class="Aligner">
+      <div class="Aligner-item Aligner-item--fixed">
+        <p>abcs</p>
+        <p>lol</p>
+      </div>
+    </div>
   </div>
+  
   <div class="card action">
     <span class="name">Research</span>
     <div class='image-border'><img src="pictures/A13_Research.png"></div>
     <div class="flavor-text">Research is hard</div>
-    <div class="text" data-text="Draw 2 Action Cards"></div>
+    <div class="Aligner">
+      <div class="Aligner-item Aligner-item--fixed">
+        <span>Draw 2 Action Cards</span>
+      </div>
+    </div>
+
   </div>
   <div class="card project">
     <span class="name">Llama Tracker</span>

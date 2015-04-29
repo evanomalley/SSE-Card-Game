@@ -39,14 +39,45 @@ body {
   box-shadow: 0px 0px 5px;
   /* padding: 3em 0; */
   /* align-self: auto; */
+  text-align: center;
+  white-space: pre;
+
 }
+
+.Aligner {
+  background: rgba(0,0,0,0.1);
+  font-weight: bold;
+  box-shadow: 0px 0px 5px;
+  border-radius: 5px;
+  width: 2.4in;
+  margin: 0.05in 0.05in;
+  display: flex;
+  align-items: center;
+  height: 24em;
+  justify-content: center;
+}
+
+.Aligner-item {
+  flex: 1;
+}
+
+.Aligner-item--fixed{
+  flex: none;
+}
+
+.text-content {
+
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .text:after {
   content: attr(data-text);
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   width: 2.4in;
-  white-space:pre;
+  // white-space:pre;
 }
 /*.student  > .text {
   height: 0.97in;
@@ -57,6 +88,18 @@ body {
 .project > .text {
   height: 0.72in;
 }*/
+
+.card p {
+  text-align: center;
+}
+
+.card p:first-child {
+  margin-top: 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
 .card.student {
   border-color: rgba(112, 128, 144, 1);
   background: linear-gradient(rgb(48, 48, 111),rgb(105, 105, 212));
