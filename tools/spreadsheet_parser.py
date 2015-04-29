@@ -4,12 +4,14 @@ Kocsen Chung
 Dan Santoro
 Winning
 """
+import re
 import json
 from json import JSONEncoder
 
 input_file = "acards.tsv"
 output_file = '../action.json'
-
+img_folder = 'pictures'
+img_extension = '.png'
 
 class CardEncoder(JSONEncoder):
     def default(self, o):
@@ -34,6 +36,11 @@ class Card:
         self.flavorText = flavor_text
         self.stats = [description]
 
+def parse_subtype(subtype):
+    if (subtype == 'Normal'):
+        return ''
+    else:
+        return subtype
 
 def main():
     with open(input_file) as f:
@@ -53,7 +60,7 @@ def main():
 
         _type = "action"
         name = split[1]
-        subtype = split[2]
+        subtype = parse_subtype(split[2])
         # ignore split[3]
         description = split[4]
         try:
@@ -61,7 +68,9 @@ def main():
         except IndexError:
             flavor_text = ""
 
-        card = Card(num_copies, _type, subtype, name, "ADDMANUALLY", flavor_text, description)
+        img_path = img_folder + '/' + re.sub(r'\s+','',name) + img_extension
+
+        card = Card(num_copies, _type, subtype, name, img_path, flavor_text, description)
         json_ary.append(card)
 
     # Dump to array

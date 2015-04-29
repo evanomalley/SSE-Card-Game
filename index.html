@@ -10,23 +10,7 @@
 
   app.controller("cardctrl", ["$scope",function($scope){
     $scope.cards = [
-      {
-        "stats": [
-          "bleep.", 
-          "bloop"
-        ], 
-        "name": "All Nighter", 
-        "img": "ADDMANUALLY", 
-        "copies": [
-          0, 
-          1, 
-          2, 
-          3
-        ], 
-        "subtype": "Normal", 
-        "flavorText": "More hours means more productivity, right?  I can see aliens now, that must mean I did something right.", 
-        "type": "action"
-      }
+
     ];
   }]);
 
@@ -39,7 +23,7 @@
 
   <div ng-repeat="card in cards">
     <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
-      <span class="name">{{card.name}} : {{card.subtype}}</span>
+      <span class="name">{{card.name}} </br> {{card.subtype}}</span>
       <div class='image-border'><img ng-src="{{card.img}}"></div>
       <div class="flavor-text">{{card.flavorText}}</div>
       <div class="Aligner">
