@@ -7,7 +7,8 @@ Winning
 import json
 from json import JSONEncoder
 
-FILENAME = "acards.tsv"
+input_file = "acards.tsv"
+output_file = '../action.json'
 
 
 class CardEncoder(JSONEncoder):
@@ -35,7 +36,7 @@ class Card:
 
 
 def main():
-    with open(FILENAME) as f:
+    with open(input_file) as f:
         file_lines = f.readlines()
 
     json_ary = []
@@ -64,7 +65,7 @@ def main():
         json_ary.append(card)
 
     # Dump to array
-    with open('out.json', 'w') as jsonfile:
+    with open( output_file, 'w') as jsonfile:
         json.dump(json_ary, jsonfile, cls=CardEncoder, indent=2)
 
 

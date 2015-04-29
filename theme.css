@@ -143,11 +143,14 @@ img {
   flex: 0 1 auto;
 }
 .student * > img {
-  max-height: 1.75in;
+  min-height: 2in;
+  max-height: 2in;
 }
 .action * > img {
+  min-height: 1.5in;
   max-height: 1.5in;
 }
 .project * > img {
+  min-height: 2in;
   max-height: 2in;
 }

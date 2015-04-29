@@ -11,59 +11,21 @@
   app.controller("cardctrl", ["$scope",function($scope){
     $scope.cards = [
       {
-        copies: _.range(0, 1),
-        type:"student",
-        name:"Evan O'Malley",
-        img:"students/Student-EvanO.png",
-        flavorText:"Make a card game?  I could probably do that",
-        stats: [
-          "Base Commit + 1",
-          "Desktop Commit + 2"
-        ]
-      },
-      {
-        copies: _.range(0, 1),
-
-        type:"student",
-        name:"Brian To",
-        img:"students/Brian.jpg",
-        flavorText:"Saulent of SWAG!! SOS!!!",
-        stats: [
-          "Base Commit + 1",
-          "Desktop Commit + 2"
-        ]
-      },
-      {
-                copies: _.range(0, 4),
-
-        type:"action",
-        name:"Research",
-        img:"pictures/A13_Research.png",
-        flavorText:"Make a card game?  I could probably do that",
-        stats: [
-          "Base Commit + 1",
-          "Desktop Commit + 2"
-        ]
-      },
-      {
-                copies: _.range(0, 4),
-
-        type: "action",
-        name:"All Nighter",
-        img:"pictures/a2_AllNighter.png",
-        flavorText:"More hours means more productivity, right?  I can see aliens now!",
-        stats: [ 
-        "Target student commits double towards a project. Gains Burnout (cannot commit during the next turn)."
-        ]
-      },
-      {
-                copies: _.range(0, 4),
-
-        type:"project",
-        name:"Evan O'Malley",
-        img:"pictures/Student-EvanO.png",
-        flavorText:"Make a card game?  I could probably do that",
-        stats: [ "One line only", "lol jk" ]
+        "stats": [
+          "bleep.", 
+          "bloop"
+        ], 
+        "name": "All Nighter", 
+        "img": "ADDMANUALLY", 
+        "copies": [
+          0, 
+          1, 
+          2, 
+          3
+        ], 
+        "subtype": "Normal", 
+        "flavorText": "More hours means more productivity, right?  I can see aliens now, that must mean I did something right.", 
+        "type": "action"
       }
     ];
   }]);
@@ -90,7 +52,7 @@
 
   <div class="card student">
     <span class="name">Evan O'Malley</span>
-    <div class='image-border'><img src="pictures/Student-EvanO.png"></div>
+    <div class='image-border'><img src="students/Student-EvanO.png"></div>
     <div class="flavor-text">Make a card Game? I could probably do that.</div>
     <!-- <div class="text" data-text="Base Commit + 1
 
