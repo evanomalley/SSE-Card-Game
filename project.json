@@ -1,8 +1,9 @@
 [
   {
     "stats": [
-      "Type: Web", 
-      "Commits Required: 18"
+      "Type: Large, Web", 
+      "Project Points: 8", 
+      "Story Points: 18"
     ], 
     "name": "Fantasy Fantasy Football", 
     "img": "projects/FantasyFantasyFootball.png", 
@@ -15,8 +16,9 @@
   }, 
   {
     "stats": [
-      "Type: Mobile", 
-      "Commits Required: 10"
+      "Type: Small, Mobile", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "Epilepsy Tester", 
     "img": "projects/EpilepsyTester.png", 
@@ -29,8 +31,9 @@
   }, 
   {
     "stats": [
-      "Type: Desktop", 
-      "Commits Required: 12"
+      "Type: Medium, Desktop", 
+      "Project Points: 5", 
+      "Story Points: 12"
     ], 
     "name": "Pizza Delivery System", 
     "img": "projects/PizzaDeliverySystem.png", 
@@ -43,8 +46,9 @@
   }, 
   {
     "stats": [
-      "Type: Generic", 
-      "Commits Required: 12"
+      "Type: Medium, Generic", 
+      "Project Points: 5", 
+      "Story Points: 12"
     ], 
     "name": "Man powered roller coaster", 
     "img": "projects/Manpoweredrollercoaster.png", 
@@ -57,8 +61,9 @@
   }, 
   {
     "stats": [
-      "Type: Desktop", 
-      "Commits Required: 10"
+      "Type: Small, Desktop", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "Tallyshell", 
     "img": "projects/Tallyshell.png", 
@@ -71,8 +76,9 @@
   }, 
   {
     "stats": [
-      "Type: Desktop", 
-      "Commits Required: 10"
+      "Type: Small, Desktop", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "Windmill Prime Generator", 
     "img": "projects/WindmillPrimeGenerator.png", 
@@ -85,8 +91,9 @@
   }, 
   {
     "stats": [
-      "Type: Mobile", 
-      "Commits Required: 12"
+      "Type: Medium, Mobile", 
+      "Project Points: 5", 
+      "Story Points: 12"
     ], 
     "name": "Physics Tutor", 
     "img": "projects/PhysicsTutor.png", 
@@ -99,8 +106,9 @@
   }, 
   {
     "stats": [
-      "Type: Generic", 
-      "Commits Required: 12"
+      "Type: Medium, Generic", 
+      "Project Points: 5", 
+      "Story Points: 12"
     ], 
     "name": "Volumetric Display", 
     "img": "projects/VolumetricDisplay.png", 
@@ -113,8 +121,9 @@
   }, 
   {
     "stats": [
-      "Type: Web", 
-      "Commits Required: 18"
+      "Type: Large, Web", 
+      "Project Points: 8", 
+      "Story Points: 18"
     ], 
     "name": "Over Engineering", 
     "img": "projects/OverEngineering.png", 
@@ -127,8 +136,9 @@
   }, 
   {
     "stats": [
-      "Type: Web", 
-      "Commits Required: 18"
+      "Type: Large, Web", 
+      "Project Points: 8", 
+      "Story Points: 18"
     ], 
     "name": "Llama Tracker", 
     "img": "projects/LlamaTracker.png", 
@@ -141,8 +151,9 @@
   }, 
   {
     "stats": [
-      "Type: Mobile", 
-      "Commits Required: 10"
+      "Type: Small, Mobile", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "Gumballs in Soda Bottles - The Game", 
     "img": "projects/GumballsinSodaBottles-TheGame.png", 
@@ -155,8 +166,9 @@
   }, 
   {
     "stats": [
-      "Type: Desktop", 
-      "Commits Required: 10"
+      "Type: Small, Desktop", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "TCAP", 
     "img": "projects/TCAP.png", 
@@ -169,8 +181,9 @@
   }, 
   {
     "stats": [
-      "Type: Generic", 
-      "Commits Required: 18"
+      "Type: Large, Generic", 
+      "Project Points: 8", 
+      "Story Points: 18"
     ], 
     "name": "SSE Card Game", 
     "img": "projects/SSECardGame.png", 
@@ -183,8 +196,9 @@
   }, 
   {
     "stats": [
-      "Type: Web", 
-      "Commits Required: 12"
+      "Type: Medium, Web", 
+      "Project Points: 5", 
+      "Story Points: 12"
     ], 
     "name": "Toolshare", 
     "img": "projects/Toolshare.png", 
@@ -197,8 +211,9 @@
   }, 
   {
     "stats": [
-      "Type: Mobile", 
-      "Commits Required: 10"
+      "Type: Small, Mobile", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "Hype Train", 
     "img": "projects/HypeTrain.png", 
@@ -211,8 +226,9 @@
   }, 
   {
     "stats": [
-      "Type: Mobile", 
-      "Commits Required: 18"
+      "Type: Large, Mobile", 
+      "Project Points: 8", 
+      "Story Points: 18"
     ], 
     "name": "Win Phone Simulator", 
     "img": "projects/WinPhoneSimulator.png", 
@@ -225,8 +241,9 @@
   }, 
   {
     "stats": [
-      "Type: Desktop", 
-      "Commits Required: 10"
+      "Type: Small, Desktop", 
+      "Project Points: 3", 
+      "Story Points: 10"
     ], 
     "name": "3 Function Calculator", 
     "img": "projects/3FunctionCalculator.png", 

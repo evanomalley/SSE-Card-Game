@@ -38,16 +38,22 @@ class Card:
 
 def parse_stats(platform, size):
     commit = 0;
+    pp = 0;
     if size == 'Small':
+        pp = 3;
         commit = 10
     elif size == 'Medium':
+        pp = 5;
         commit = 12
     elif size == 'Large':
+        pp = 8;
         commit = 18
 
     if platform == 'None':
         platform = 'Generic'
-    return ['Type: ' + platform, 'Commits Required: ' + str(commit)]
+    return ['Type: ' + size + ', ' + platform,  
+    'Project Points: ' + str(pp),
+    'Story Points: ' + str(commit)]
 
 def main():
     with open(input_file) as f:

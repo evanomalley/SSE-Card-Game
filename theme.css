@@ -26,24 +26,6 @@ body {
   margin: 0.05in;
 }
 
-/* CARD TEXT */
-.text {
-  flex: 1 1 auto;
-  /* display: block; */
-  /* position: absolute; */
-  background: rgba(0,0,0,0.1);
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 0.05in 0.05in;
-  width: 2.4in;
-  box-shadow: 0px 0px 5px;
-  /* padding: 3em 0; */
-  /* align-self: auto; */
-  text-align: center;
-  white-space: pre-wrap;
-
-}
-
 .Aligner {
   background: rgba(0,0,0,0.1);
   font-weight: bold;
@@ -66,40 +48,9 @@ body {
   flex: none;
 }
 
-.text-content {
-
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.text:after {
-  content: attr(data-text);
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  width: 2.4in;
-  white-space:pre-wrap;
-}
-/*.student  > .text {
-  height: 0.97in;
-}
-.action > .text {
-  height: 1.22in;
-}
-.project > .text {
-  height: 0.72in;
-}*/
-
 .card p {
   text-align: center;
-}
-
-.card p:first-child {
-  margin-top: 0;
-}
-
-.card p:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 .card.student {
   border-color: rgba(112, 128, 144, 1);
@@ -113,15 +64,6 @@ body {
   border-color: rgba(112, 144, 128, 1);
   background: linear-gradient(rgb(48, 111, 48),rgb(105, 212, 105));
 }
-/*.student > .name {
-  background: rgba(105, 212, 105, 1);
-}
-.action > .name {
-  background: rgba(212, 105, 105, 1);
-}
-.project > .name {
-  background: rgba(144, 144, 238, 1);
-}*/
 span.name {
   display: block;
   text-align: center;
