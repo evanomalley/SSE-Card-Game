@@ -68,7 +68,7 @@ def main():
         except IndexError:
             flavor_text = ""
 
-        img_path = img_folder + '/' + re.sub(r'\s+','',name) + img_extension
+        img_path = img_folder + '/' + re.sub(r'[. \/:]','',name) + img_extension
 
         card = Card(num_copies, _type, subtype, name, img_path, flavor_text, description)
         json_ary.append(card)
