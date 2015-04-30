@@ -1,477 +1,477 @@
 [
   {
-    "subtype": "",
-    "name": "Evan O'Malley",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"Make an SSE card game, sure I can do that.\"",
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Evan_O'Malley.jpg",
-    "stats": [
-      "Desktop Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Evan O'Malley"
   },
   {
-    "subtype": "",
-    "name": "Alvaro Pareja-Lecraros",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"Crazy stuff\"",
+    "stats": [
+      "Mobile Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Alvaro_Pareja-Lecraros.jpg",
-    "stats": [
-      "Mobile Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Alvaro Pareja-Lecraros"
   },
   {
-    "subtype": "",
-    "name": "Brad Bensch",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "El Presidente",
+    "stats": [
+      "Web Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Brad_Bensch.jpg",
-    "stats": [
-      "Web Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Brad Bensch"
   },
   {
-    "subtype": "",
-    "name": "Brian To",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I am a glamazonian and baby I'm FABULOUS!!!!\"",
+    "stats": [
+      "Web Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Brian_To.jpg",
-    "stats": [
-      "Web Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Brian To"
   },
   {
-    "subtype": "",
-    "name": "Craig Cabrey",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"Your architecture is bad and you should feel bad\"",
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Craig_Cabrey.jpg",
-    "stats": [
-      "Desktop Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Craig Cabrey"
   },
   {
-    "subtype": "",
-    "name": "Dylan Vuz",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"HYPE IT UP!!!!!\"",
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Dylan_Vuz.jpg",
-    "stats": [
-      "Desktop Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Dylan Vuz"
   },
   {
-    "subtype": "",
-    "name": "Ethan Jurman",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I'm all about them assets\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Ethan_Jurman.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Ethan Jurman"
   },
   {
-    "subtype": "",
-    "name": "Jesse Jurman",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"My face is literally hardware\"",
+    "stats": [
+      "Web Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Jesse_Jurman.jpg",
-    "stats": [
-      "Web Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Jesse Jurman"
   },
   {
-    "subtype": "",
-    "name": "John Grischuk",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I'm that mec-e who hangs out in the lab\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/John_Grischuk.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "John Grischuk"
   },
   {
-    "subtype": "",
-    "name": "John Murray",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I don't do fun\"",
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/John_Murray.jpg",
-    "stats": [
-      "Desktop Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "John Murray"
   },
   {
-    "subtype": "",
-    "name": "John O'Brien",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I could make something useful but then I who would make the 30,000th clone of flappy bird?\"",
+    "stats": [
+      "Mobile Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/John_O'Brien.jpg",
-    "stats": [
-      "Mobile Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "John O'Brien"
   },
   {
-    "subtype": "",
-    "name": "John Renner",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"JavaScript is the runtime of the world\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/John_Renner.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "John Renner"
   },
   {
-    "subtype": "",
-    "name": "Kocsen Chung",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"Dude potatos come from Peru\"",
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Kocsen_Chung.jpg",
-    "stats": [
-      "Desktop Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Kocsen Chung"
   },
   {
-    "subtype": "",
-    "name": "Kristen Mills",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I don't need a diploma. They should give me alcohol when I graduate.\"",
-    "img": "students/Kristen_Mills.jpg",
     "stats": [
       "Web Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Maggie Hewitt",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
-    "flavorText": "\"It's a tarp\"",
+    "img": "students/Kristen_Mills.jpg",
+    "name": "Kristen Mills"
+  },
+  {
+    "flavorText": "\"I don't design\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Maggie_Hewitt.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Maggie Hewitt"
   },
   {
-    "subtype": "",
-    "name": "Matt Metcalf",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"We don't talk about that project anymore\"",
-    "img": "students/Matt_Metcalf.jpg",
     "stats": [
       "Base Commit +2"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Matt Smicinski",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Matt_Metcalf.jpg",
+    "name": "Matt Metcalf"
+  },
+  {
     "flavorText": "\"No that's stupid why would you do that?\"",
-    "img": "students/Matt_Smicinski.jpg",
     "stats": [
       "Mobile Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Matt Stevens",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
-    "flavorText": "\"Guys who to play waifu warz\"",
-    "img": "students/Matt_Stevens.jpg",
+    "img": "students/Matt_Smicinski.jpg",
+    "name": "Matt Smicinski"
+  },
+  {
+    "flavorText": "\"I like pyturtles\"",
     "stats": [
       "Web Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Morgan Cabral",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Matt_Stevens.jpg",
+    "name": "Matt Stevens"
+  },
+  {
     "flavorText": "*CAPS LOCK*",
-    "img": "students/Morgan_Cabral.jpg",
     "stats": [
       "Base Commit +2"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Peter Kang",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Morgan_Cabral.jpg",
+    "name": "Morgan Cabral"
+  },
+  {
     "flavorText": "\"Words are hard right now\"",
-    "img": "students/Peter_Kang.jpg",
     "stats": [
       "Desktop Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Randy Goodman",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Peter_Kang.jpg",
+    "name": "Peter Kang"
+  },
+  {
     "flavorText": "\"My favorite game is KSP where you get as high as possible\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Randy_Goodman.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Randy Goodman"
   },
   {
-    "subtype": "",
-    "name": "Ryan Bega",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I don't care what my flavor text says\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Ryan_Bega.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Ryan Bega"
   },
   {
-    "subtype": "",
-    "name": "Steven Jones",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I made a fireworks simulator, I know how to Android\"",
+    "stats": [
+      "Mobile Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Steven_Jones.jpg",
-    "stats": [
-      "Mobile Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Steven Jones"
   },
   {
-    "subtype": "",
-    "name": "Steven Teplica",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "Freshman who has no idea what is ahead of him",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Steven_Teplica.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Steven Teplica"
   },
   {
-    "subtype": "",
-    "name": "Tina Howard",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"This project sucks\"",
-    "img": "students/Tina_Howard.jpg",
     "stats": [
       "Base Commit +2"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Eric Lee",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Tina_Howard.jpg",
+    "name": "Tina Howard"
+  },
+  {
     "flavorText": "\"I like long walks on the beach, and Rush...together.",
-    "img": "students/Eric_Lee.jpg",
     "stats": [
       "Mobile Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Daniel Santoro",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Eric_Lee.jpg",
+    "name": "Eric Lee"
+  },
+  {
     "flavorText": "\"I program non-software projects\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Daniel_Santoro.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Daniel Santoro"
   },
   {
-    "subtype": "",
-    "name": "Benjin Dubishar",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I'll teach you... discipline.\"",
-    "img": "students/Benjin_Dubishar.jpg",
     "stats": [
       "Base Commit +2"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Emma Nelson",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Benjin_Dubishar.jpg",
+    "name": "Benjin Dubishar"
+  },
+  {
     "flavorText": "\"The manger class will do everything\"",
-    "img": "students/Emma_Nelson.jpg",
     "stats": [
       "Web Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Michael Timbrook",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Emma_Nelson.jpg",
+    "name": "Emma Nelson"
+  },
+  {
     "flavorText": "\"Your opinion would be flagged as Timbrook\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Michael_Timbrook.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "Michael Timbrook"
   },
   {
-    "subtype": "",
-    "name": "John Palmer",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"For Science\"",
+    "stats": [
+      "Base Commit +2"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/John_Palmer.jpg",
-    "stats": [
-      "Base Commit +2"
-    ]
+    "name": "John Palmer"
   },
   {
-    "subtype": "",
-    "name": "Wesley Wigham",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"I don't do mobile development, I DON'T\"",
+    "stats": [
+      "Mobile Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Wesley_Wigham.jpg",
-    "stats": [
-      "Mobile Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Wesley Wigham"
   },
   {
-    "subtype": "",
-    "name": "Matt Mokary",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"Run it up!\"",
+    "stats": [
+      "Mobile Commits +2",
+      "Base Commit +1"
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
     "img": "students/Matt_Mokary.jpg",
-    "stats": [
-      "Mobile Commits +2",
-      "Base Commit +1"
-    ]
+    "name": "Matt Mokary"
   },
   {
-    "subtype": "",
-    "name": "Derek Erdmann",
-    "copies": [
-      0
-    ],
-    "type": "student",
     "flavorText": "\"If your deployment takes more then 4 hours, see a doctor.\"",
-    "img": "students/Derek_Erdmann.jpg",
     "stats": [
       "Mobile Commits +2",
       "Base Commit +1"
-    ]
-  },
-  {
-    "subtype": "",
-    "name": "Chris_Bentivenga",
+    ],
     "copies": [
       0
     ],
+    "subtype": "",
     "type": "student",
+    "img": "students/Derek_Erdmann.jpg",
+    "name": "Derek Erdmann"
+  },
+  {
     "flavorText": "\"Time to use variable names my mother would approve of.\"",
-    "img": "students/Chris_Bentivenga.jpg",
     "stats": [
       "Base Commit +2"
-    ]
+    ],
+    "copies": [
+      0
+    ],
+    "subtype": "",
+    "type": "student",
+    "img": "students/Chris_Bentivenga.jpg",
+    "name": "Chris Bentivenga"
   }
 ]
