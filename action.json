@@ -1,0 +1,528 @@
+[
+  {
+    "copies": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "img": "pictures/AllNighter.png",
+    "name": "All Nighter",
+    "stats": [
+      "Target student commits double towards a project. Gains Burnout (cannot commit during the next turn)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "More hours means more productivity, right?  I can see aliens now!"
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "img": "pictures/JobInterview.png",
+    "name": "Job Interview",
+    "stats": [
+      "Target student has -1 base commit for 2 turns."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "Wait, what's Polymorphism again?"
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "img": "pictures/SemesterStarts.png",
+    "name": "Semester Starts",
+    "stats": [
+      "Replace one of your own students with one from top of deck."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Oh no I'm poor again."
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "img": "pictures/MentoringCabinet.png",
+    "name": "Mentoring Cabinet",
+    "stats": [
+      "Look at top 3 cards in the action deck. Add one to your hand and discard the rest."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "It's everything we could ever need and so much more!"
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2
+    ],
+    "img": "pictures/BoxFort.png",
+    "name": "Box Fort",
+    "stats": [
+      "Prevent a Software Bug (when a Software Bug is played, negate its effect)."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": " Your authority is not recognized inside fort kickass!"
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2
+    ],
+    "img": "pictures/SwitchMajors.png",
+    "name": "Switch Majors ",
+    "stats": [
+      "Remove a Co-op from target student; that studen'ts company draws an action card."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "To be or not to be?  I don't know, why not."
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2
+    ],
+    "img": "pictures/RequirementsChange.png",
+    "name": "Requirements Change",
+    "stats": [
+      "Reveal a project from the top of the deck. Replace one of your projects and apply half of its completed progress to the new project. "
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "We want you do make a red triangle using four blue lines in the form of a kitten."
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/BalmerPeak.png",
+    "name": "Balmer Peak",
+    "stats": [
+      "Add or remove 25% of target project's total required progress to its current progress."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "Developers! Developers! Developers! Developers!"
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "img": "pictures/Research.png",
+    "name": "Research",
+    "stats": [
+      "Draw 2 action cards."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "FOR SCIENCE!!!!!!!!"
+  },
+  {
+    "copies": [
+      0,
+      1,
+      2
+    ],
+    "img": "pictures/AgileMethodology.png",
+    "name": "Agile Methodology",
+    "stats": [
+      "Your team members gain +1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "My estimate is 21....BLACKJACK!!!!"
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/RoadTrip.png",
+    "name": "Road Trip",
+    "stats": [
+      "Target a student and one of your students, both commit half during their next commit"
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "Guys, theres this thing in that one city.  We're going!"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/WinterBall.png",
+    "name": "Winter Ball",
+    "stats": [
+      "Untill your next turn, each company only has one student commit."
+    ],
+    "type": "action",
+    "subtype": "Event",
+    "flavorText": "The goal is to not get arrested by the end of the night"
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/CareerFair.png",
+    "name": "Career Fair",
+    "stats": [
+      "Starting with you and going left, each player draws a student and may choose to replace one of their current students."
+    ],
+    "type": "action",
+    "subtype": "Event",
+    "flavorText": "Making it rain resumes to get all the jobs."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/ImagineRIT.png",
+    "name": "ImagineRIT",
+    "stats": [
+      "Until your next turn, all students gain base +1 progress"
+    ],
+    "type": "action",
+    "subtype": "Event",
+    "flavorText": "Such innovation, very inspire."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/HockeyFinals.png",
+    "name": "Hockey Finals",
+    "stats": [
+      "Until your next turn, all students commit half progress"
+    ],
+    "type": "action",
+    "subtype": "Event",
+    "flavorText": "Wait, we have a sports team?"
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/SearchEngineIN..png",
+    "name": "Search Engine IN. ",
+    "stats": [
+      "Student has +2 for web projects"
+    ],
+    "type": "action",
+    "subtype": "Co-op",
+    "flavorText": ""
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/Pineapple.png",
+    "name": "Pineapple",
+    "stats": [
+      "Student has +2 for mobile projects"
+    ],
+    "type": "action",
+    "subtype": "Co-op",
+    "flavorText": ""
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/Macrohard.png",
+    "name": "Macrohard",
+    "stats": [
+      "Student has +2 for desktop projects"
+    ],
+    "type": "action",
+    "subtype": "Co-op",
+    "flavorText": ""
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/BoxCore(Amazon).png",
+    "name": "Box Core (Amazon)",
+    "stats": [
+      "Student has +1 to any project"
+    ],
+    "type": "action",
+    "subtype": "Co-op",
+    "flavorText": ""
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/OutofItCorp.(Intuit).png",
+    "name": "OutofIt Corp. (Intuit)",
+    "stats": [
+      "Student has +1 to any project"
+    ],
+    "type": "action",
+    "subtype": "Co-op",
+    "flavorText": ""
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/Lutz.png",
+    "name": "Lutz",
+    "stats": [
+      "Target project gains +4 progress"
+    ],
+    "type": "action",
+    "subtype": "Professor",
+    "flavorText": "I can write software at an incredibly high rate, as long as it doesn't have to work."
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/Malachowsky.png",
+    "name": "Malachowsky",
+    "stats": [
+      "Draw 1 action card. Target project gains +2 progress"
+    ],
+    "type": "action",
+    "subtype": "Professor",
+    "flavorText": "\"I was the character in many of my classes, I still am.\""
+  },
+  {
+    "copies": [
+      0,
+      1
+    ],
+    "img": "pictures/Krutz.png",
+    "name": "Krutz",
+    "stats": [
+      "Discard Hand draw 3 cards."
+    ],
+    "type": "action",
+    "subtype": "Professor",
+    "flavorText": "\"As long as you're all reasonably sober and coherent, you'll all get full credit!\""
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/StandUpmeeting.png",
+    "name": "Stand Up meeting",
+    "stats": [
+      "Your team members gain +1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Great now we are four dev's standing around in a circle, what now?"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/Freefood.png",
+    "name": "Free food",
+    "stats": [
+      "Your team members gain +1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Its not the apocalypse, it's the rumbling of the heard of interns heading to the kitchen."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/Morningcupofcoffee.png",
+    "name": "Morning cup of coffee",
+    "stats": [
+      "Your team members gain +1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Nothing starts the day out right unless you have chugged a gallon of coffee."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/Codereview.png",
+    "name": "Code review",
+    "stats": [
+      "Your team members gain +1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": " It's not a bug its a feature"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/Lunchw/coworkers.png",
+    "name": "Lunch w/ coworkers",
+    "stats": [
+      "Target student has -1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "Food now, work latter."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/Rampup.png",
+    "name": "Rampup",
+    "stats": [
+      "Target student has -1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "I have no idea what I am doing"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/Brokethebuild.png",
+    "name": "Broke the build ",
+    "stats": [
+      "Target student has -1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "FIX IT! FIX IT! FIX IT! FIX IT! FIX IT! FIX IT! FIX IT! FIX IT! FIX IT!"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/DeadBattery.png",
+    "name": "Dead Battery",
+    "stats": [
+      "Target student has -1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "I couldn't do work today, my mouse would not move around."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/RelocatingWorkspace.png",
+    "name": "Relocating Workspace",
+    "stats": [
+      "Target student has -1 base commit this turn."
+    ],
+    "type": "action",
+    "subtype": "Quick Action",
+    "flavorText": "There are windows, OOOO SQUIRREL!!!"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/SoftwareBug:QA.png",
+    "name": "Software Bug: QA",
+    "stats": [
+      "For one turn, target CEO cannot play action cards during their turn (cards already played are still in effect)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Someone broke the gravity; fix it!"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/SoftwareBug:QA.png",
+    "name": "Software Bug: QA",
+    "stats": [
+      "For one turn, target CEO cannot play action cards during their turn (cards already played are still in effect)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "The bugs are breeding quickly; get the raid!"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/SoftwareBug:QA.png",
+    "name": "Software Bug: QA",
+    "stats": [
+      "For one turn, target CEO cannot play action cards during their turn (cards already played are still in effect)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Unicrons are flying across the screen!"
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/SoftwareBug:QA.png",
+    "name": "Software Bug: QA",
+    "stats": [
+      "For one turn, target CEO cannot play action cards during their turn (cards already played are still in effect)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "The network went down; go pick it up."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/SoftwareBug:QA.png",
+    "name": "Software Bug: QA",
+    "stats": [
+      "For one turn, target CEO cannot play action cards during their turn (cards already played are still in effect)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "Why doesn't this work?  I bet I need to download more RAM."
+  },
+  {
+    "copies": [
+      0
+    ],
+    "img": "pictures/SoftwareBug:QA.png",
+    "name": "Software Bug: QA",
+    "stats": [
+      "For one turn, target CEO cannot play action cards during their turn (cards already played are still in effect)."
+    ],
+    "type": "action",
+    "subtype": "",
+    "flavorText": "I don't know how to program on Mars.  Why am I here?"
+  }
+]

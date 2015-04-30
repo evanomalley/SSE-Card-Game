@@ -1,0 +1,110 @@
+[
+  {
+    "flavorText": "\"Make an SSE card game, sure I can do that.\"",
+    "img": "students/Evan_O'Malley.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "name": "Evan O'Malley"
+  },
+  {
+    "flavorText": "El Presidente",
+    "img": "students/Brad_Bensch.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Web Commits +2",
+      "Base Commit +1"
+    ],
+    "name": "Brad Bensch"
+  },
+  {
+    "flavorText": "\"I don't do fun\"",
+    "img": "students/John_Murray.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Desktop Commits +2",
+      "Base Commit +1"
+    ],
+    "name": "John Murray"
+  },
+  {
+    "flavorText": "*CAPS LOCK*",
+    "img": "students/Morgan_Cabral.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Base Commit +2"
+    ],
+    "name": "Morgan Cabral"
+  },
+  {
+    "flavorText": "\"My favorite game is KSP where you get as high as possible\"",
+    "img": "students/Randy_Goodman.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Base Commit +2"
+    ],
+    "name": "Randy Goodman"
+  },
+  {
+    "flavorText": "Freshman who has no idea what is ahead of him",
+    "img": "students/Steven_Teplica.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Base Commit +2"
+    ],
+    "name": "Steven Teplica"
+  },
+  {
+    "flavorText": "\"This project sucks\"",
+    "img": "students/Tina_Howard.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Base Commit +2"
+    ],
+    "name": "Tina Howard"
+  },
+  {
+    "flavorText": "\"I like long walks on the beach, and Rush...together.",
+    "img": "students/Eric_Lee.jpg",
+    "type": "student",
+    "subtype": "",
+    "copies": [
+      0
+    ],
+    "stats": [
+      "Mobile Commits +2",
+      "Base Commit +1"
+    ],
+    "name": "Eric Lee"
+  }
+]

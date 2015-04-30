@@ -15,6 +15,9 @@
       $scope.cards = res.data;
     });
 
+    $http.get('people.json').then(function(res) { 
+      $scope.cards.push.apply($scope.cards,res.data);
+    });
    // $scope.cards.push(action_cards);
   });
 
