@@ -8,11 +8,15 @@
   
   var app = angular.module("APP", []);
 
-  app.controller("cardctrl", ["$scope",function($scope){
-    $scope.cards = [
+  app.controller("cardctrl", function($scope, $http){
+    var action_cards;
 
-    ];
-  }]);
+    $http.get('action.json').then(function(res) { 
+      $scope.cards = res.data;
+    });
+
+   // $scope.cards.push(action_cards);
+  });
 
 </script>
 
