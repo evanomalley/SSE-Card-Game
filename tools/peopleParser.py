@@ -8,7 +8,7 @@ import re
 import json
 from json import JSONEncoder
 
-input_file = "pcards.tsv"
+input_file = "scards.tsv"
 output_file = '../people.json'
 img_folder = 'students'
 img_extension = '.jpg'
