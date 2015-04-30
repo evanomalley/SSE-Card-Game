@@ -1,0 +1,240 @@
+[
+  {
+    "stats": [
+      "Type: Web", 
+      "Commits Required: 18"
+    ], 
+    "name": "Fantasy Fantasy Football", 
+    "img": "projects/FantasyFantasyFootball.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "The ultimate meta game where your team is your friends who play fantasy football.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Mobile", 
+      "Commits Required: 10"
+    ], 
+    "name": "Epilepsy Tester", 
+    "img": "projects/EpilepsyTester.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Diagnoses people for epilepsy. \"Intense\" multi-player mode. ", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Desktop", 
+      "Commits Required: 12"
+    ], 
+    "name": "Pizza Delivery System", 
+    "img": "projects/PizzaDeliverySystem.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Overambitious second year's attempt to work together for the first time.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Generic", 
+      "Commits Required: 12"
+    ], 
+    "name": "Man powered roller coaster", 
+    "img": "projects/Manpoweredrollercoaster.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "How am I supposed to build this out of software", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Desktop", 
+      "Commits Required: 10"
+    ], 
+    "name": "Tallyshell", 
+    "img": "projects/Tallyshell.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Sometimes you want to do math, and check the status of your git repo, all at once.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Desktop", 
+      "Commits Required: 10"
+    ], 
+    "name": "Windmill Prime Generator", 
+    "img": "projects/WindmillPrimeGenerator.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Small windmill, powered by dastic sighs, that generates large prime numbers. numbers.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Mobile", 
+      "Commits Required: 12"
+    ], 
+    "name": "Physics Tutor", 
+    "img": "projects/PhysicsTutor.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Something to help us fail less at physics.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Generic", 
+      "Commits Required: 12"
+    ], 
+    "name": "Volumetric Display", 
+    "img": "projects/VolumetricDisplay.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "\"if this falls apart, duck\"", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Web", 
+      "Commits Required: 18"
+    ], 
+    "name": "Over Engineering", 
+    "img": "projects/OverEngineering.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Use YO and geo-spacal-querying to create and over engineering tour waving bot.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Web", 
+      "Commits Required: 18"
+    ], 
+    "name": "Llama Tracker", 
+    "img": "projects/LlamaTracker.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "For those who really like llamas.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Mobile", 
+      "Commits Required: 10"
+    ], 
+    "name": "Gumballs in Soda Bottles - The Game", 
+    "img": "projects/GumballsinSodaBottles-TheGame.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Shake, shake shake.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Desktop", 
+      "Commits Required: 10"
+    ], 
+    "name": "TCAP", 
+    "img": "projects/TCAP.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "\"Yeah, I implemented all of those features but they weren't all that good.... so I deleted it. I haven't made any progress.\"", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Generic", 
+      "Commits Required: 18"
+    ], 
+    "name": "SSE Card Game", 
+    "img": "projects/SSECardGame.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "How meta can this get", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Web", 
+      "Commits Required: 12"
+    ], 
+    "name": "Toolshare", 
+    "img": "projects/Toolshare.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "A bottle opener is a tool.", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Mobile", 
+      "Commits Required: 10"
+    ], 
+    "name": "Hype Train", 
+    "img": "projects/HypeTrain.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "chuga chuga hype hype", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Mobile", 
+      "Commits Required: 18"
+    ], 
+    "name": "Win Phone Simulator", 
+    "img": "projects/WinPhoneSimulator.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "It's only inception if you're running an Android emulator too...", 
+    "type": "project"
+  }, 
+  {
+    "stats": [
+      "Type: Desktop", 
+      "Commits Required: 10"
+    ], 
+    "name": "3 Function Calculator", 
+    "img": "projects/3FunctionCalculator.png", 
+    "copies": [
+      0
+    ], 
+    "subtype": "", 
+    "flavorText": "Plus, minus, and inverse log", 
+    "type": "project"
+  }
+]

@@ -153,6 +153,6 @@ img {
   max-height: 1.5in;
 }
 .project * > img {
-  min-height: 2in;
-  max-height: 2in;
+  min-height: 1.75in;
+  max-height: 1.75in;
 }

@@ -9,7 +9,6 @@
   var app = angular.module("APP", []);
 
   app.controller("cardctrl", function($scope, $http){
-    var action_cards;
 
     $http.get('action.json').then(function(res) { 
       $scope.cards = res.data;
@@ -18,7 +17,10 @@
     $http.get('people.json').then(function(res) { 
       $scope.cards.push.apply($scope.cards,res.data);
     });
-   // $scope.cards.push(action_cards);
+
+    $http.get('project.json').then(function(res) { 
+      $scope.cards.push.apply($scope.cards,res.data);
+    });
   });
 
 </script>
