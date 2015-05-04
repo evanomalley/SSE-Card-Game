@@ -23,6 +23,11 @@
     });
   });
 
+  /*
+  To implement automatic page scrolling, insert the following
+  line of code within the body tab
+  onLoad="pageScroll()""
+  */
   var count = 0;
   function pageScroll() {
       window.scrollBy(0,5); // horizontal and vertical scroll increments
@@ -39,12 +44,12 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type="text/css" href="theme.css">
 </head>
-<body ng-app="APP" ng-controller="cardctrl" onLoad="pageScroll()">
+<body ng-app="APP" ng-controller="cardctrl" >
 
   <div ng-repeat="card in cards">
     <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
       <span class="name">{{card.name}} </br> {{card.subtype}}</span>
-      <div class='image-border'><img ng-src="{{card.img}}"></div>
+      <div class='image-border'><img ng-src="{{card.img_path}}"></div>
       <div class="flavor-text">{{card.flavorText}}</div>
       <div class="Aligner">
         <div class="Aligner-item Aligner-item--fixed">
@@ -54,39 +59,5 @@
     </div>
   </div>
 
-  <!-- <div class="card student">
-    <span class="name">Evan O'Malley</span>
-    <div class='image-border'><img src="students/Evan_O'Malley.png"></div>
-    <div class="flavor-text">Make a card Game? I could probably do that.</div>
-    <div class="text" data-text="Base Commit + 1
-
-        Desktop Commit + 2"></div>
-    <div class="Aligner">
-    <div class="Aligner-item Aligner-item--fixed">
-        <p>abcs</p>
-        <p>lol</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card action">
-    <span class="name">Research</span>
-    <div class='image-border'><img src="pictures/A13_Research.png"></div>
-    <div class="flavor-text">Research is hard</div>
-    <div class="Aligner">
-      <div class="Aligner-item Aligner-item--fixed">
-        <span>Draw 2 Action Cards</span>
-      </div>
-    </div>
-
-  </div>
-  <div class="card project">
-    <span class="name">Llama Tracker</span>
-    <div class='image-border'><img src="pictures/LlamaTracker.png"></div>
-    <div class="flavor-text">For all your tracking needs!</div>
-    <div class="text" data-text="Type: Desktop
-
-Commits Required: 18"></div>
-  </div> -->
 </body>
 </html>
