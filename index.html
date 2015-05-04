@@ -23,12 +23,23 @@
     });
   });
 
+  var count = 0;
+  function pageScroll() {
+      window.scrollBy(0,5); // horizontal and vertical scroll increments
+      count++;
+      scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
+      if (count >= 800){
+        window.scrollTo(0,0);
+        count = 0;
+      }
+
+  }
 </script>
 
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type="text/css" href="theme.css">
 </head>
-<body ng-app="APP" ng-controller="cardctrl">
+<body ng-app="APP" ng-controller="cardctrl" onLoad="pageScroll()">
 
   <div ng-repeat="card in cards">
     <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
