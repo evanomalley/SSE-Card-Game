@@ -25,7 +25,7 @@ class Card:
         self.type = _type
         self.subtype = subtype
         self.name = name
-        self.img = img_path
+        self.img_path = img_path
         self.flavorText = flavor_text
         self.stats = description
 
