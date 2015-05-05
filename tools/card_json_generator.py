@@ -53,22 +53,25 @@ class DataParser:
 class ProjectParser(DataParser):
     
     def parse(self):
+        json_ary = []
         #TODO
 
 class ActionParser(DataParser):
 
     def parse(self):
+        json_ary = []
         #TODO
 
 class StudentParser(DataParser):
 
     def parse(self):
+        json_ary = []
         #TODO
 
 
 def main():
     #TODO
-    #Validation of row,
+    
 
 
 
