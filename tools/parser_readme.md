@@ -33,7 +33,9 @@ Size Input: Small, Medium, Large
 Specialization Input: Desktop, Mobile, Web, None (or anything else)
 For the specializations the code generated will be: 
 >*Project Type* commits +2
+
 >Base commit +1
+
 else
 >Base commit +2
 

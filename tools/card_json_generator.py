@@ -8,6 +8,15 @@ import re
 import json
 from json import JSONEncoder
 
+#An array of all the files to parse
+input_files = ["pcards.tsv"]
+#Variables for customization
+img_extension = '.png'
+img_folder = 'pictures'
+#Output files
+project_file = '../project.json'
+action_file = '../action.json'
+student_file = '../student.json'
 
 
 class CardEncoder(JSONEncoder):
@@ -28,6 +37,10 @@ class Card:
         self.img_path = img_path
         self.flavorText = flavor_text
         self.stats = description
+
+def FileWrite(output_file):
+    with open( output_file, 'w') as jsonfile:
+        json.dump(json_ary, jsonfile, cls=CardEncoder, indent=2)
 
 class DataParser:
 
@@ -53,9 +66,11 @@ class StudentParser(DataParser):
         #TODO
 
 
-
 def main():
     #TODO
+    #Validation of row,
+
+
 
 if __name__ == "__main__":
     main()
