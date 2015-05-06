@@ -38,7 +38,7 @@ class Card:
         self.flavorText = flavor_text
         self.stats = description
 
-def FileWrite(output_file):
+def file_write(output_file):
     with open( output_file, 'w') as jsonfile:
         json.dump(json_ary, jsonfile, cls=CardEncoder, indent=2)
 
@@ -68,29 +68,41 @@ class StudentParser(DataParser):
         json_aray = []
         #TODO
 
-def get_lines(input_file):
-    with open(input_file) as f:
-        file_lines = f.readlines()
+def get_line_values(line):
 
-    for line in file_lines:
-        lines = []
-        if f.endswith('.tsv'):
-            lines.append(line.strip().split("\t"))
-        else if f.endswith('.csv'):
-            lines.append(lin.strip().split(","))
+    row = []
+
+    if f.endswith('.tsv'):
+        row = (line.strip().split("\t"))
+    else if f.endswith('.csv'):
+        row = (lin.strip().split(","))
+
+    return row
+
+class Row:
 
 
 def main():
     #TODO
+    json_aray = []
     for input_file in input_files
-        lines = get_lines(input_file)
-        
 
+        with open(input_file) as f:
+            file_lines = f.readlines()
 
+        header = get_line_values(file_lines[0])
 
+        header_dict = {}
 
+        #Get header data, map header to index
+        for idx, col in enumerate(header):
+            if col == "#":
+                header_dict["#"] = idx
+            elif col == "Project Name":
+                header_dict["Project Name"] = idx
+            elif col == "Flavor Text":
+                header_dict["Flavor Text"] = idx
 
-    
 
 if __name__ == "__main__":
     main()
