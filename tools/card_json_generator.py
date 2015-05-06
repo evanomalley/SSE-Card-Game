@@ -52,28 +52,45 @@ class DataParser:
 
 class ProjectParser(DataParser):
     
-    def parse(self):
-        json_ary = []
+    def parse(self, split):
+        json_aray = []
         #TODO
 
 class ActionParser(DataParser):
 
-    def parse(self):
-        json_ary = []
+    def parse(self, split):
+        json_aray = []
         #TODO
 
 class StudentParser(DataParser):
 
-    def parse(self):
-        json_ary = []
+    def parse(self, split):
+        json_aray = []
         #TODO
+
+def get_lines(input_file):
+    with open(input_file) as f:
+        file_lines = f.readlines()
+
+    for line in file_lines:
+        lines = []
+        if f.endswith('.tsv'):
+            lines.append(line.strip().split("\t"))
+        else if f.endswith('.csv'):
+            lines.append(lin.strip().split(","))
 
 
 def main():
     #TODO
+    for input_file in input_files
+        lines = get_lines(input_file)
+        
+
+
+
+
+
     
-
-
 
 if __name__ == "__main__":
     main()
