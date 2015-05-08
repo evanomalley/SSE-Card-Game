@@ -52,19 +52,31 @@ class DataParser:
 
 class ProjectParser(DataParser):
     
-    def parse(self, split):
+    def parse(self, file_lines):
         json_aray = []
         #TODO
+        header = get_line_values(file_lines[0])
+
+        header_dict = {}
+
+        #Get header data, map header to index
+        for idx, col in enumerate(header):
+            if col == "#":
+                header_dict["#"] = idx
+            elif col == "Project Name":
+                header_dict["Project Name"] = idx
+            elif col == "Flavor Text":
+                header_dict["Flavor Text"] = idx
 
 class ActionParser(DataParser):
 
-    def parse(self, split):
+    def parse(self, file_lines):
         json_aray = []
         #TODO
 
 class StudentParser(DataParser):
 
-    def parse(self, split):
+    def parse(self, file_lines):
         json_aray = []
         #TODO
 
@@ -90,18 +102,6 @@ def main():
         with open(input_file) as f:
             file_lines = f.readlines()
 
-        header = get_line_values(file_lines[0])
-
-        header_dict = {}
-
-        #Get header data, map header to index
-        for idx, col in enumerate(header):
-            if col == "#":
-                header_dict["#"] = idx
-            elif col == "Project Name":
-                header_dict["Project Name"] = idx
-            elif col == "Flavor Text":
-                header_dict["Flavor Text"] = idx
 
 
 if __name__ == "__main__":
