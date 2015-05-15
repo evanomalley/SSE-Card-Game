@@ -14,7 +14,7 @@ The parser will always check the names column for a line. If the name entry is e
 
 ##Command Line Arguments
 This program supports the following arguments:  
--h --help : shows how to use the arguments
+-h --help : shows how to use the arguments  
 -i --input : An input file to parse
 
  TODO Inplement multiple command line arguments per flag
