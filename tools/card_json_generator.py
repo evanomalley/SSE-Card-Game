@@ -4,6 +4,7 @@ Parses spreedsheet tsv or csv to json
 Daniel Santoro
 """
 
+import sys, getopt
 import re
 import json
 from json import JSONEncoder
@@ -13,7 +14,7 @@ input_files = ["pcards.tsv"]
 #Variables for customization
 img_extension = '.png'
 img_folder = 'pictures'
-#Output files
+#Output path
 project_file = '../project.json'
 action_file = '../action.json'
 student_file = '../student.json'
@@ -67,6 +68,12 @@ class ProjectParser(DataParser):
                 header_dict["Project Name"] = idx
             elif col == "Flavor Text":
                 header_dict["Flavor Text"] = idx
+            elif col == "Platform":
+                header_dict["Platform"] = idx
+            elif col == "Size":
+                header_dict["Size"] = idx
+
+
 
 class ActionParser(DataParser):
 
@@ -86,23 +93,37 @@ def get_line_values(line):
 
     if f.endswith('.tsv'):
         row = (line.strip().split("\t"))
-    else if f.endswith('.csv'):
+    elif f.endswith('.csv'):
         row = (lin.strip().split(","))
 
     return row
 
-class Row:
 
-
-def main():
+def main(argv):
     #TODO
     json_aray = []
-    for input_file in input_files
 
+    try:
+        opts, args = getopt.getopt(argv, "hi:", ["help", "input="])
+    except getopt.GetoptError:
+        usage()
+        sys.exit(2)
+
+    for opt, arg in opts:
+        if opt == '-h':
+            usage()
+            sys.exit()
+        elif opt in ("-i", "--input"):
+            global input_files 
+            input_files = [arg]
+
+    for input_file in input_files:
         with open(input_file) as f:
             file_lines = f.readlines()
 
-
+#Prints the usage of the command line arguments
+def usage():
+    print 'usage: -i <inputfile>'
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

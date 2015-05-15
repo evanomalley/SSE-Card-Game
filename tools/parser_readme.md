@@ -10,6 +10,18 @@ All files' first row (header) must contain `#`,  *type* name, and then the title
 
 The platform inpuus of Projects should match the Specialization inputes of Students
 
+The parser will always check the names column for a line. If the name entry is empty it will skip the line.
+
+#Command Line Arguments
+This program supports the following arguments:
+-h --help : shows how to use the arguments
+-i --input : An input file to parse
+
+ TODO Inplement multiple command line arguments per flag
+ http://stackoverflow.com/questions/4109436/processing-multiple-values-for-one-single-option-using-getopt-optparse
+
+ TODO Implement output file support
+
 #Formating
 This is how the header of different files are formated. 
 Each row requires a value for # and name to be considered.
