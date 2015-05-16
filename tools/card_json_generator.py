@@ -93,6 +93,7 @@ class ProjectParser(DataParser):
 
             img_path = img_folder + '/'+ _type + 's/' + re.sub(r'\s+','',name) + img_extension
 
+            print(abilities)
             #Append a new card object to the array
             json_array.append(Card(num_copies, name, _type, subtype, abilities, flavor_text, img_path))
 
@@ -125,17 +126,18 @@ class ProjectParser(DataParser):
         commit = 0;
         pp = 0;
 
-        size.lower()
-        if size == 'small':
+        size = size[0].upper() + size[1:].lower()
+        if size == 'Small':
             pp = 3;
             commit = 10
-        elif size == 'medium':
+        elif size == 'Medium':
             pp = 5;
             commit = 12
-        elif size == 'large':
+        elif size == 'Large':
             pp = 8;
             commit = 18
 
+        platform = platform[0].upper() + platform[1:].lower()
         if platform == 'none':
             platform = 'Generic'
         return ['Type: ' + size + ', ' + platform,  
