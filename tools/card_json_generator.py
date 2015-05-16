@@ -93,7 +93,6 @@ class ProjectParser(DataParser):
 
             img_path = img_folder + '/'+ _type + 's/' + re.sub(r'\s+','',name) + img_extension
 
-            print(abilities)
             #Append a new card object to the array
             json_array.append(Card(num_copies, name, _type, subtype, abilities, flavor_text, img_path))
 
@@ -105,19 +104,16 @@ class ProjectParser(DataParser):
 
         for idx, col in enumerate(header):
 
-            #Work around lowering case
-            compare = col
-            compare = compare.lower()
-
-            if compare == '#':
+            col = col.lower()
+            if col == '#':
                 header_dict['#'] = idx
-            elif compare == 'project name':
+            elif col == 'project name':
                 header_dict['project name'] = idx
-            elif compare == 'flavor text':
+            elif col == 'flavor text':
                 header_dict['flavor text'] = idx
-            elif compare == 'platform':
+            elif col == 'platform':
                 header_dict['platform'] = idx
-            elif compare == 'size':
+            elif col == 'size':
                 header_dict['size'] = idx
 
         return header_dict
