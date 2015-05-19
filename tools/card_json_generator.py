@@ -54,11 +54,36 @@ class DataParser:
     def parse(self):
         pass
 
+    #Get header data, map header to index, returns dictionary
+    #Fields is an array of values that are needed for the card
+    #header_line is a line that is being mapped to fields
+    #If the header_line misses a field, it prints an error 
+    #and returns an empty dictionary
+    def assign_header(self, header_fields, header_line):
+        header_dict = {}
+
+        #Check if the header_line contains each field
+        for field in header_fields:
+            has_field = False
+            for idx, col in enumerate(header_line):
+                col = col.lower()
+                if col == field:
+                    has_field = True
+                    header_dict[field] = idx
+
+            if has_field == False:
+                return []
+
+        return header_dict
+
+
 class ProjectParser(DataParser):
     
     def parse(self, file_lines):
 
-        header_dict = self.assign_header(get_line_values(file_lines[0]))
+        header_fields = ['#', 'project name', 'flavor text', 'platform', 'size']
+
+        header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
 
         json_array = []
 
@@ -98,25 +123,6 @@ class ProjectParser(DataParser):
 
         file_write(_type + '.json', json_array)
 
-    #Get header data, map header to index
-    def assign_header(self, header):
-        header_dict = {}
-
-        for idx, col in enumerate(header):
-
-            col = col.lower()
-            if col == '#':
-                header_dict['#'] = idx
-            elif col == 'project name':
-                header_dict['project name'] = idx
-            elif col == 'flavor text':
-                header_dict['flavor text'] = idx
-            elif col == 'platform':
-                header_dict['platform'] = idx
-            elif col == 'size':
-                header_dict['size'] = idx
-
-        return header_dict
 
     def abilities_text(self, platform, size):
         commit = 0;
