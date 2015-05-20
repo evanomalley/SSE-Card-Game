@@ -221,6 +221,8 @@ class StudentParser(DataParser):
 def get_line_values(line):
 
     row = []
+    #TODO potentially implement strategy method for parsing lines
+    #Have seperate methods for each format parser
 
     if file_type == 'tsv':
         row = (line.strip().split('\t'))
@@ -244,6 +246,7 @@ def main(argv):
             usage()
             sys.exit()
         elif opt in ('-i', '--input'):
+            #Defines input file
             global input_files 
             input_files = [arg]
 
