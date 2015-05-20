@@ -85,6 +85,11 @@ class ProjectParser(DataParser):
 
         header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
 
+
+        if not header_dict:
+            print('Header is missing fields.\nCheck the readme for format')
+            return
+
         json_array = []
 
         #Constants for project cards
