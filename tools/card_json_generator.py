@@ -158,6 +158,58 @@ class ActionParser(DataParser):
         json_array = []
         #TODO
         print("Sorry parser yet to be implemented")
+        return
+
+        header_fields = ['#', 'action name', 'flavor text', 'action', 'subtype']
+
+        header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
+
+        if not header_dict:
+            print('Header is missing fields.\nCheck the readme for format')
+            return
+
+        json_array = []
+
+        #Constants for action cards
+        _type = 'action'
+
+        #For each row, parse the values and create json objects of the cards
+        for line in file_lines[1:]:
+            row_split = get_line_values(line)
+
+            #Make sure each row is as long as the header
+            #Prevents index out of bounds
+            while len(row_split) < len(header_dict):
+                    row_split.append('')
+
+            name = row_split[header_dict[_type + ' name']]
+
+            #if no value in the name column, skip row
+            if not name:
+                continue
+
+            #Try to assign the number of copies of the card, else skip row
+            try:
+                num_copies = int(row_split[header_dict['#']])
+            except ValueError:
+                continue
+
+            subtype = parse_subtype(row_split[header_dict['subtype']])
+
+            flavor_text = row_split[header_dict['flavor text']]
+
+            img_path = img_folder + '/'+ _type + 's/' + re.sub(r'[. \/:]','', name) + img_extension
+
+            #Append a new card object to the array
+            json_array.append(Card(num_copies, name, _type, subtype, abilities, flavor_text, img_path))
+
+        file_write(_type + '.json', json_array)
+
+    def parse_subtype(subtype):
+        if (subtype == 'Normal'):
+            return ''
+        else:
+            return subtype
 
 class StudentParser(DataParser):
 
