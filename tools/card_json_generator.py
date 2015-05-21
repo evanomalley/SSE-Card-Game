@@ -260,9 +260,12 @@ def main(argv):
             elif input_file.endswith('.csv'):
                 file_type = 'csv'
 
-            #TODO Call the parsers
-            #split first line (header) and look for the 'name' row
-            parser = ProjectParser()
+            #Looks through the header file for the type of parser
+            header = get_line_values(file_lines[0])
+            if any("project" in s.lower() for s in header):
+                parser = ProjectParser()
+            else if any("action" in s.lower() for s in header):
+                parser = ActionParser()
             parser.parse(file_lines)
 
 #Prints the usage of the command line arguments
