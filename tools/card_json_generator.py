@@ -11,12 +11,12 @@ from json import JSONEncoder
 
 #An array of all the files to parse
 #Overridden if command line argument is used
-input_files = ['projects.tsv']
+input_files = ['projects.tsv', 'students.tsv', 'actions.tsv']
 #Variables for customization
 img_extension = '.png'
 img_folder = 'pictures'
 #Output path
-output_path = '../'
+output_path = '../data/'
 
 #Global variable for file type
 file_type = ''
@@ -45,6 +45,7 @@ def file_write(output_name, json_array):
     output_file = output_path + output_name
     with open( output_file, 'w') as jsonfile:
         json.dump(json_array, jsonfile, cls=CardEncoder, indent=2)
+    print(output_name + " json file has been created.")
 
 class DataParser:
 
@@ -86,15 +87,15 @@ class ProjectParser(DataParser):
         header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
 
 
-        if not header_dict:
-            print('Header is missing fields.\nCheck the readme for format')
-            return
-
-        json_array = []
-
         #Constants for project cards
         _type = 'project'
         subtype = ''
+
+        if not header_dict:
+            print(_type + ' header is missing fields.\nCheck the readme for format')
+            return
+
+        json_array = []
 
         #For each row, parse the values and create json objects of the cards
         for line in file_lines[1:]:
@@ -103,7 +104,7 @@ class ProjectParser(DataParser):
             #Make sure each row is as long as the header
             #Prevents index out of bounds
             while len(row_split) < len(header_dict):
-                    row_split.append('')
+                row_split.append('')
 
             name = row_split[header_dict[_type + ' name']]
 
@@ -155,23 +156,24 @@ class ProjectParser(DataParser):
 class ActionParser(DataParser):
 
     def parse(self, file_lines):
-        json_array = []
-        #TODO
-        print("Sorry parser yet to be implemented")
+
+        #TODO fix index out of range
+        print("Action parser not functional")
         return
 
         header_fields = ['#', 'action name', 'flavor text', 'action', 'subtype']
 
         header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
 
-        if not header_dict:
-            print('Header is missing fields.\nCheck the readme for format')
-            return
-
-        json_array = []
 
         #Constants for action cards
         _type = 'action'
+
+        if not header_dict:
+            print(_type + 'header is missing fields.\nCheck the readme for format')
+            return
+
+        json_array = []
 
         #For each row, parse the values and create json objects of the cards
         for line in file_lines[1:]:
@@ -180,7 +182,7 @@ class ActionParser(DataParser):
             #Make sure each row is as long as the header
             #Prevents index out of bounds
             while len(row_split) < len(header_dict):
-                    row_split.append('')
+                row_split.append('')
 
             name = row_split[header_dict[_type + ' name']]
 
@@ -194,7 +196,9 @@ class ActionParser(DataParser):
             except ValueError:
                 continue
 
-            subtype = parse_subtype(row_split[header_dict['subtype']])
+            subtype = self.parse_subtype(row_split[header_dict['subtype']])
+
+            abilities = row_split[header_dict['action']]
 
             flavor_text = row_split[header_dict['flavor text']]
 
@@ -205,7 +209,7 @@ class ActionParser(DataParser):
 
         file_write(_type + '.json', json_array)
 
-    def parse_subtype(subtype):
+    def parse_subtype(self, subtype):
         if (subtype == 'Normal'):
             return ''
         else:
@@ -214,9 +218,67 @@ class ActionParser(DataParser):
 class StudentParser(DataParser):
 
     def parse(self, file_lines):
+
+        header_fields = ['#', 'student name', 'specialization', 'flavor text', 'custom ability']
+
+        header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
+
+        #Constants for action cards
+        _type = 'student'
+        subtype = ''
+
+        if not header_dict:
+            print(_type + 'header is missing fields.\nCheck the readme for format')
+            return
+
         json_array = []
-        #TODO
-        print("Sorry parser yet to be implemented")
+
+        #For each row, parse the values and create json objects of the cards
+        for line in file_lines[1:]:
+            row_split = get_line_values(line)
+
+            #Make sure each row is as long as the header
+            #Prevents index out of bounds
+            while len(row_split) < len(header_dict):
+                row_split.append('')
+
+            name = row_split[header_dict[_type + ' name']]
+
+            #if no value in the name column, skip row
+            if not name:
+                continue
+
+            #Try to assign the number of copies of the card, else skip row
+            try:
+                num_copies = int(row_split[header_dict['#']])
+            except ValueError:
+                continue
+
+            #Assign the abilities of the student;
+            #if has a custom, else based on its specialization
+            abilities = row_split[header_dict['custom ability']]
+
+            if not abilities:
+                abilities = self.parse_stats(row_split[header_dict['specialization']])
+
+            flavor_text = row_split[header_dict['flavor text']]
+
+            img_path = img_folder + '/'+ _type + 's/' + re.sub(r'[. \/:]','', name) + img_extension
+
+            #Append a new card object to the array
+            json_array.append(Card(num_copies, name, _type, subtype, abilities, flavor_text, img_path))
+
+        file_write(_type + '.json', json_array)
+
+    def parse_stats(self, description):
+        if (description== 'Desktop'):
+            return ['Desktop Commits +2','Base Commit +1']
+        elif(description == 'Mobile'):
+            return ['Mobile Commits +2','Base Commit +1']
+        elif(description == 'Web'):
+            return ['Web Commits +2','Base Commit +1']
+        else:
+            return ['Base Commit +2']
 
 def get_line_values(line):
 
@@ -264,8 +326,13 @@ def main(argv):
             header = get_line_values(file_lines[0])
             if any("project" in s.lower() for s in header):
                 parser = ProjectParser()
-            else if any("action" in s.lower() for s in header):
+            elif any("action" in s.lower() for s in header):
                 parser = ActionParser()
+            elif any("student" in s.lower() for s in header):
+                parser = StudentParser()
+            else:
+                print("Not a recognized card type.\n")
+                return
             parser.parse(file_lines)
 
 #Prints the usage of the command line arguments

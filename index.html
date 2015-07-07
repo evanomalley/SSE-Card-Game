@@ -10,15 +10,15 @@
 
   app.controller("cardctrl", function($scope, $http){
 
-    $http.get('action.json').then(function(res) { 
+    $http.get('data/action.json').then(function(res) { 
       $scope.cards = res.data;
     });
 
-    $http.get('people.json').then(function(res) { 
+    $http.get('data/people.json').then(function(res) { 
       $scope.cards.push.apply($scope.cards,res.data);
     });
 
-    $http.get('project.json').then(function(res) { 
+    $http.get('data/project.json').then(function(res) { 
       $scope.cards.push.apply($scope.cards,res.data);
     });
   });

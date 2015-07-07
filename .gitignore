@@ -1,4 +1,4 @@
-*.json
 *.csv
 *.tsv
 *.db
+data/
