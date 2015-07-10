@@ -43,6 +43,7 @@ class Card:
 
 def file_write(output_name, json_array):
     output_file = output_path + output_name
+    #Todo if file exists ask to override
     with open( output_file, 'w') as jsonfile:
         json.dump(json_array, jsonfile, cls=CardEncoder, indent=2)
     print(output_name + " json file has been created.")
@@ -85,7 +86,6 @@ class ProjectParser(DataParser):
         header_fields = ['#', 'project name', 'flavor text', 'platform', 'size']
 
         header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
-
 
         #Constants for project cards
         _type = 'project'
@@ -157,14 +157,10 @@ class ActionParser(DataParser):
 
     def parse(self, file_lines):
 
-        #TODO fix index out of range
-        print("Action parser not functional")
-        return
-
         header_fields = ['#', 'action name', 'flavor text', 'action', 'subtype']
 
         header_dict = self.assign_header(header_fields, get_line_values(file_lines[0]))
-
+        header_length = len(get_line_values(file_lines[0]))
 
         #Constants for action cards
         _type = 'action'
@@ -181,7 +177,7 @@ class ActionParser(DataParser):
 
             #Make sure each row is as long as the header
             #Prevents index out of bounds
-            while len(row_split) < len(header_dict):
+            while len(row_split) < header_length:
                 row_split.append('')
 
             name = row_split[header_dict[_type + ' name']]
