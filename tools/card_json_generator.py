@@ -194,7 +194,7 @@ class ActionParser(DataParser):
 
             subtype = self.parse_subtype(row_split[header_dict['subtype']])
 
-            abilities = row_split[header_dict['action']]
+            abilities = [row_split[header_dict['action']]]
 
             flavor_text = row_split[header_dict['flavor text']]
 
