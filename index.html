@@ -14,7 +14,7 @@
       $scope.cards = res.data;
     });
 
-    $http.get('data/people.json').then(function(res) { 
+    $http.get('data/student.json').then(function(res) { 
       $scope.cards.push.apply($scope.cards,res.data);
     });
 

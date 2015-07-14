@@ -11,7 +11,7 @@ import json
 from json import JSONEncoder
 
 #An array of all the files to parse
-input_files = ['projects.tsv']
+input_files = ['projects.tsv', 'actions.tsv', 'students.tsv']
 #Variables for customization
 img_folder = 'pictures'
 output_path = '../data/'
@@ -104,7 +104,7 @@ class DataParser(object):
 
             flavor_text = row_split[header_dict['flavor text']]
 
-            img_path = img_folder + '/'+ _type + 's/' + re.sub(r'\s+','',name)
+            img_path = img_folder + '/'+ _type + 's/' + re.sub(r'[. \/:]','', name)
 
             #Append a new card object to the array
             json_array.append(Card(num_copies, name, _type, subtype, abilities, flavor_text, img_path))
@@ -143,7 +143,6 @@ class ProjectParser(DataParser):
 
     def parse(self, file_lines):
         header_fields = ['#', 'project name', 'flavor text', 'platform', 'size']
-
         super(ProjectParser, self).parse(file_lines, header_fields)
 
     def abilities_text(self, row_split, header_dict):
@@ -170,6 +169,47 @@ class ProjectParser(DataParser):
         return ['Type: ' + size + ', ' + platform,  
         'Project Points: ' + str(pp),
         'Story Points: ' + str(commit)]
+
+class ActionParser(DataParser):
+
+    def parse(self, file_lines):
+        header_fields = ['#', 'action name', 'flavor text', 'action', 'subtype']
+        super(ActionParser, self).parse(file_lines, header_fields)
+
+    def abilities_text(self, row_split, header_dict):
+        return [row_split[header_dict['action']]]
+
+    def parse_subtype(self, subtype):
+        if (subtype == 'Normal'):
+            return ''
+        else:
+            return subtype
+
+class StudentParser(DataParser):
+
+    def parse(self, file_lines):
+        header_fields = ['#', 'student name', 'specialization', 'flavor text', 'custom ability']
+        super(StudentParser, self).parse(file_lines, header_fields)
+
+    def abilities_text(self, row_split, header_dict):
+        #Assign the abilities of the student;
+        #if has a custom, else based on its specialization
+        abilities = row_split[header_dict['custom ability']]
+
+        if not abilities:
+            abilities = self.parse_stats(row_split[header_dict['specialization']])
+
+        return abilities
+
+    def parse_stats(self, description):
+        if (description== 'Desktop'):
+            return ['Desktop Commits +2','Base Commit +1']
+        elif(description == 'Mobile'):
+            return ['Mobile Commits +2','Base Commit +1']
+        elif(description == 'Web'):
+            return ['Web Commits +2','Base Commit +1']
+        else:
+            return ['Base Commit +2']
 
 
 def get_line_values(line):

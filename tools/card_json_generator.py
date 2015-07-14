@@ -43,7 +43,6 @@ class Card:
 
 def file_write(output_name, json_array):
     output_file = output_path + output_name
-    #Todo if file exists ask to override
     with open( output_file, 'w') as jsonfile:
         json.dump(json_array, jsonfile, cls=CardEncoder, indent=2)
     print(output_name + " json file has been created.")
