@@ -111,7 +111,7 @@ class DataParser(object):
 
         file_write(_type + '.json', json_array)
 
-    def abilities_text(self):
+    def abilities_text(self, row_split, header_dict):
         pass
 
     def parse_subtype(self, subtype):
@@ -147,8 +147,29 @@ class ProjectParser(DataParser):
         super(ProjectParser, self).parse(file_lines, header_fields)
 
     def abilities_text(self, row_split, header_dict):
-        print('todo')
-        return ''
+        platform = row_split[header_dict['platform']]
+        size = row_split[header_dict['size']]
+
+        commit = 0;
+        pp = 0;
+
+        size = size[0].upper() + size[1:].lower()
+        if size == 'Small':
+            pp = 3;
+            commit = 10
+        elif size == 'Medium':
+            pp = 5;
+            commit = 12
+        elif size == 'Large':
+            pp = 8;
+            commit = 18
+
+        platform = platform[0].upper() + platform[1:].lower()
+        if platform == 'none':
+            platform = 'Generic'
+        return ['Type: ' + size + ', ' + platform,  
+        'Project Points: ' + str(pp),
+        'Story Points: ' + str(commit)]
 
 
 def get_line_values(line):
