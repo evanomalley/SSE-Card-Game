@@ -14,7 +14,7 @@
       $scope.cards = res.data;
     });
 
-    $http.get('data/people.json').then(function(res) { 
+    $http.get('data/student.json').then(function(res) { 
       $scope.cards.push.apply($scope.cards,res.data);
     });
 
@@ -49,7 +49,7 @@
   <div ng-repeat="card in cards">
     <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
       <span class="name">{{card.name}} </br> {{card.subtype}}</span>
-      <div class='image-border'><img ng-src="{{card.img_path}}"></div>
+      <div class='image-border'><img ng-src="{{card.img_path}}.png"></div>
       <div class="flavor-text">{{card.flavorText}}</div>
       <div class="Aligner">
         <div class="Aligner-item Aligner-item--fixed">
