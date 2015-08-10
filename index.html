@@ -23,18 +23,6 @@
     });
   });
 
-   app.directive('errSrc', function() {
-      return {
-        link: function(scope, element, attrs) {
-          element.bind('error', function() {
-            if (attrs.src != attrs.errSrc) {
-              attrs.$set('src', attrs.errSrc);
-            }
-          });
-        }
-      }
-    });
-
   /*
   To implement automatic page scrolling, insert the following
   line of code within the body tab
@@ -61,7 +49,7 @@
   <div ng-repeat="card in cards">
     <div ng-repeat="instance in card.copies track by $index" class="card" ng-class="card.type">
       <span class="name">{{card.name}} </br> {{card.subtype}}</span>
-      <div class='image-border'><img ng-src="{{card.img_path}}.png" err-src="{{card.img_path}}.jpg"></div>
+      <div class='image-border'><img src="{{card.img_path}}"></div>
       <div class="flavor-text">{{card.flavorText}}</div>
       <div class="Aligner">
         <div class="Aligner-item Aligner-item--fixed">

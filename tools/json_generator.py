@@ -5,15 +5,18 @@ to json format
 Daniel Santoro
 '''
 
-import sys, getopt
+import sys
+import glob
 import re
 import json
 from json import JSONEncoder
+from optparse import OptionParser
 
 #An array of all the files to parse
 input_files = ['projects.tsv', 'actions.tsv', 'students.tsv']
 #Variables for customization
 img_folder = 'pictures'
+img_extension = '.png' #Default file extension for images
 output_path = '../data/'
 
 #Global variable for file type - do not edit
@@ -105,6 +108,13 @@ class DataParser(object):
             flavor_text = row_split[header_dict['flavor text']]
 
             img_path = img_folder + '/'+ _type + 's/' + re.sub(r'[. \/:]','', name)
+            image = (glob.glob('../' + img_path + '.*'))
+            if image:
+                image = image[0]
+                img_path = re.sub(r'[\\:]','/', image[3:])
+                print(img_path)
+            else:
+                img_path = img_path + img_extension
 
             #Append a new card object to the array
             json_array.append(Card(num_copies, name, _type, subtype, abilities, flavor_text, img_path))
@@ -227,6 +237,7 @@ def get_line_values(line):
 
 def main(argv):
 
+
     #todo command line args
     for input_file in input_files:
         with open(input_file) as f:
@@ -237,7 +248,7 @@ def main(argv):
                 file_type = 'tsv'
             elif input_file.endswith('.csv'):
                 file_type = 'csv'
-                print('csv files may not work as intended')
+                print('Warning: csv files may not work as intended')
             else:
                 print('Not a valid file type')
                 continue
@@ -252,7 +263,7 @@ def main(argv):
                 parser = StudentParser()
             else:
                 print("Not a recognized card type.\n")
-                return
+                continue
             parser.parse(file_lines)
 
 #Prints the usage of the command line arguments
